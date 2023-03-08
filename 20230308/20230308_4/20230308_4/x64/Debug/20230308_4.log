@@ -1,3 +1,0 @@
-﻿  main.cpp
-C:\Ji Hwan GOH\모빌리티프로그램\202315001_JiHwanGOH\20230308\20230308_4\20230308_4\main.cpp(14,12): warning C4477: 'printf' : 서식 문자열 '%f'에 'double' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
-  20230308_4.vcxproj -> C:\Ji Hwan GOH\모빌리티프로그램\202315001_JiHwanGOH\20230308\20230308_4\x64\Debug\20230308_4.exe
