@@ -3,16 +3,19 @@
 
 void main()
 {
-	int x, y;
+	int x;
+	int y;
 	x = 0;
 	y = 0;
+	printf("x값에 변수를 입력하시오. : \n");
 	scanf("%d", &x);
+	printf("y값에 변수를 입력하시오. : \n");
 	scanf("%d", &y);
 	if (x > y)
 	{
-		printf("x의 값이 y의 값보다 큽니다. \n");
+		printf("x의 값이 y의 값보다 큽니다.");
 	}
-	else (x < y);
+	else
 	{
 		printf("x의 값이 y의 값보다 작습니다.");
 	}
