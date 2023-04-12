@@ -1,7 +1,0 @@
-﻿  main.cpp
-C:\Users\user\Desktop\202315001_JiHwanGOH\20230410\C언어 150제\20230410-3\20230410-3\main.cpp(5,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-C:\Users\user\Desktop\202315001_JiHwanGOH\20230410\C언어 150제\20230410-3\20230410-3\main.cpp(8,46): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
-C:\Users\user\Desktop\202315001_JiHwanGOH\20230410\C언어 150제\20230410-3\20230410-3\main.cpp(8,46): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
-C:\Users\user\Desktop\202315001_JiHwanGOH\20230410\C언어 150제\20230410-3\20230410-3\main.cpp(10,39): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
-C:\Users\user\Desktop\202315001_JiHwanGOH\20230410\C언어 150제\20230410-3\20230410-3\main.cpp(10,39): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
-  20230410-3.vcxproj -> C:\Users\user\Desktop\202315001_JiHwanGOH\20230410\C언어 150제\20230410-3\x64\Debug\20230410-3.exe
