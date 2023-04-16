@@ -96,10 +96,10 @@ void Excersize_2_21(int solution, int answer)
 		printf("=========================   풀 이   =============================\n\n");
 		printf("관련공식은 y = y0 + v0 * t + 1/2 * a * t^2입니다. \n");
 		printf("y는 높이, y0는 처음높이, v0는 처음속도, t는 시간, a는 가속도입니다.\n");
-		printf("자유낙하 운동이므로 가속도(=a)는 중력가속도(=g)로 대입한다.\n");
-		printf("중력가속도를 이용하여 %6.2lf m/s^2는 다음과 같습니다. \n", g);
-		printf("y = y0 + v0 * t + 1/2 * g * t ^ 2으로 식 변환이 됩니다.\n");
-		printf("v0는 처음에 낙하하므로 v0는 %6.2lf m/s이다.\n", initialvelocity);
+		printf("자유낙하 운동이므로 가속도(=a)는 중력가속도(=g)로 변환됩니다.\n");
+		printf("중력가속도는 %6.2lf m/s^ 2입니다.\n", g);
+		printf("관련공식에 중력가속도를 대입하여 y = y0 + v0 * t + 1/2 * g * t ^ 2으로 식 변환이 됩니다.\n");
+		printf("v0는 처음속도이므로 %6.2lf m/s 입니다.\n", initialvelocity);
 		printf("이후에 식을 정리하여 t값을 구해주면 된다.\n");
 		printf("식은 %6.2lf m = %6.2lf m + %6.2lf m/s * t + 1/2 * %6.2lf m/s^2 * t^ 2가 됩니다.\n", h, y0, v0, g);
 		printf("식은 %6.2lf m = 1/2 * %6.2lf m/s^2 * t^2 입니다.\n", h, g);
@@ -127,9 +127,10 @@ void Excersize_2_21(int solution, int answer)
 		printf("=========================   풀 이   =============================\n\n");
 		printf("관련 공식은  v = v0 + a * t입니다. \n");
 		printf("v는 나중속도, v0는 처음속도, a는 가속도, t는 시간입니다.\n");
-		printf("자유낙하 운동이므로 가속도(=a)는 중력가속도(=g)로 대입한다.\n");
-		printf("v = v0 + g * t으로 식 변환이 됩니다.\n");
-		printf("v0는 처음에 낙하하므로 v0는 %6.2lf m/s이다.\n", initialvelocity);
+		printf("자유낙하 운동이므로 가속도(=a)는 중력가속도(=g)로 변환됩니다.\n");
+		printf("중력가속도는 %6.2lf m/s^ 2입니다.\n", g);
+		printf("관련공식에 중력가속도를 대입하여 v = v0 + g * t으로 식 변환이 됩니다.\n");
+		printf("v0는 처음 속도이므로 %6.2lf m/s이다.\n", initialvelocity);
 		printf("이후에 식을 정리하여 나중속도값을 구해주면 된다.\n");
 		printf("식은 v = %6.2lf m + %6.2lf m/s^2 * t가 됩니다.\n", v0, g);
 		printf("=================================================================\n");
