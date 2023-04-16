@@ -1,21 +1,23 @@
 #define _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 
 void main()
 {
-    int num[5];
-    int i, sum = 0;
-    double avg;
+	double a = 0.0, b = 0.0, c = 0.0, d = 0.0, e = 0.0, x = 0.0, y = 0.0;
 
-    for (i = 0; i < 5; i++) {
-        printf("숫자를 입력하세요 : ");
-        scanf("%d", &num[i]);
+	printf("5개의 실수를 입력해주세요\n");
+	scanf("%lf", &a);
+	scanf("%lf", &b);
+	scanf("%lf", &c);
+	scanf("%lf", &d);
+	scanf("%lf", &e);
 
-        sum += num[i];
-    }
 
-    avg = sum / 5.0;
+	x = a + b + c + d + e;
+	printf("5개의 실수의 합은 %.0lf 입니다", x);
 
-    printf("합은 %d, 평균은 %lf 입니다.", sum, avg);
+	y = x / 5;
+	printf("5개의 실수의 평균은 %.0lf 입니다", y);
 
- }
+}
