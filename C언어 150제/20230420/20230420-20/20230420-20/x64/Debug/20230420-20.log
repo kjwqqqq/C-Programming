@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\user\Desktop\202315001\20230420\20230420-20\20230420-20\main.cpp(4,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\user\Desktop\202315001\20230420\20230420-20\20230420-20\main.cpp(5,23): warning C4305: '초기화 중': 'int'에서 'char'(으)로 잘립니다.
+C:\Users\user\Desktop\202315001\20230420\20230420-20\20230420-20\main.cpp(5,15): warning C4309: '초기화 중': 상수 값이 잘립니다.
+C:\Users\user\Desktop\202315001\20230420\20230420-20\20230420-20\main.cpp(6,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int'입니다.
+C:\Users\user\Desktop\202315001\20230420\20230420-20\20230420-20\main.cpp(6,9): warning C4313: 'printf': 서식 문자열의 '%s'이(가) int' 형식의 인수 1과(와) 충돌합니다.
+  20230420-20.vcxproj -> C:\Users\user\Desktop\202315001\20230420\20230420-20\x64\Debug\20230420-20.exe
