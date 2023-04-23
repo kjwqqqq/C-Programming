@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\user\Desktop\202315001\20230423-25\main.cpp(5,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\user\Desktop\202315001\20230423-25\main.cpp(13,8): warning C4477: 'scanf' : 서식 문자열 '%lf'에 'double *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+  20230423-25.vcxproj -> C:\Users\user\Desktop\202315001\20230423-25\x64\Debug\20230423-25.exe
