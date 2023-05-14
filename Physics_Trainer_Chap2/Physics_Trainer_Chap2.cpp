@@ -95,7 +95,7 @@ void Excersize_2_21(int solution, int answer)
 		printf("y : 높이, y0 : 처음높이, v0 : 처음속도, t : 시간, a : 가속도\n\n");
 		printf("중력가속도는 아래 방향이므로 -%6.2lfm/s^2 입니다.\n\n",g);
 		printf("y = y0 + v0 * t - 1/2 * g * t^2\n");
-		printf("%6.2lf m = 1/2 * %6.2lf m/s^2 * t^2\n", h, g);
+		printf("%6.2lfm = %6.2lfm + %6.2lfm/s * t - 1/2 * %6.2lf m/s^2 * t^2 = - 1/2 * %6.2lfm/s^2 * t^2\n",h,y0,v0,g,g);
 		printf("sqrt(2 * %6.2lfm / %6.2lfm/s^2) = %6.2lfs\n\n",h, g, t);
 	}
 
@@ -117,7 +117,6 @@ void Excersize_2_21(int solution, int answer)
 		printf("v = v0 + a * t\n");
 		printf("v = %6.2lfm - %6.2lf m/s^2 * %6.2lfs = -%6.2lfm/s\n\n", v0, g,t,v);
 	}
-
 	if (answer == SHOW)
 	{
 		printf("=========================   정 답   =============================\n\n");
