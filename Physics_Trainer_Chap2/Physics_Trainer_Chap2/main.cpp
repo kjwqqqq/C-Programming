@@ -111,7 +111,7 @@ void Excersize_2_21(int solution, int answer)
 		printf("v : 나중속도, v0 : 처음속도, a : 가속도, t : 시간\n\n");
 		printf("중력가속도는 아래 방향이므로 -%6.2lfm/s^2 입니다.\n\n", g);
 		printf("v = v0 + a * t\n");
-		printf("v = %6.2lfm - %6.2lf m/s^2 * %6.2lfs\n", v0, g, t);
+		printf("  = %6.2lfm - %6.2lf m/s^2 * %6.2lfs\n", v0, g, t);
 		printf("  = %6.2lfm/s\n\n", v);
 
 	}
