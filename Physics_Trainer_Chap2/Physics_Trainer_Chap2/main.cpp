@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 #define SHOW          1
 #define NOT_SHOW      0
 #define Show_Solution 1
@@ -33,14 +34,14 @@ void Excersize_2_1(int solution, int answer)
 		printf("관련 공식은 Δy = Δy1 - Δy2 \n");
 		printf("Δy1은 총 북쪽으로 날아간 거리, Δy2는 총 남쪽으로 날아간 거리\n\n");
 		printf("Δy = Δy1 - Δy2\n");
-		printf("Δy = %6.2lfkm - %6.2lfkm\n", y_displacement, south_distance);
+		printf("    = %6.2lfkm - %6.2lfkm\n", y_displacement, south_distance);
 		printf("    = %6.2lfkm\n\n", displacement_a);
 	}
 
 	if (answer == SHOW)
 	{
 		printf("============================= 정 답 =============================\n\n");
-		printf("처음 기지로부터 마지막 도착 지점까지의 헬기의 변위는 Δy = %4.1lf km\n\n",displacement_a);
+		printf("Δy = %4.1lf km\n\n",displacement_a);
 	}
 
 	if (solution == SHOW)
@@ -49,14 +50,14 @@ void Excersize_2_1(int solution, int answer)
 		printf("(b) 또 이날 헬기가 움직인 총 거리는 얼마인가 ? \n\n");
 		printf("관련 공식은 Δy = Δy1 + Δy2 \n");
 		printf("Δy = Δy1 + Δy2\n");
-		printf("Δy = %6.2lfkm + %6.2lfkm\n", y_displacement, south_distance);
+		printf("    = %6.2lfkm + %6.2lfkm\n", y_displacement, south_distance);
 		printf("    = %6.2lfkm\n\n", displacement_b);
 	}
 
 	if (answer == SHOW)
 	{
 		printf("========================= 정 답 =================================\n\n");
-		printf("대형기동헬기가 총 움직인 거리는 Δy = %4.1lfkm \n\n",displacement_b );
+		printf("Δy = %4.1lfkm \n\n",displacement_b );
 		printf("=================================================================\n\n");
 	}
 
@@ -100,7 +101,7 @@ void Excersize_2_21(int solution, int answer)
 	if (answer == SHOW)
 	{
 		printf("=========================   정 답   =============================\n\n");
-		printf("지면에 떨어지는 데까지 걸리는 시간은 t = %6.2lfs\n\n", t);
+		printf("t = %6.2lfs\n\n", t);
 	}
 
 	if (solution == SHOW)
@@ -118,7 +119,7 @@ void Excersize_2_21(int solution, int answer)
 	if (answer == SHOW)
 	{
 		printf("=========================   정 답   =============================\n\n");
-		printf("지면에 도달하기 직전의 속도는 v = -%6.2lfm/s\n\n", v);
+		printf("v = -%6.2lfm/s\n\n", v);
 		printf("=================================================================\n\n");
 	}
 }
