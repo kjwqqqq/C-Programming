@@ -9,10 +9,11 @@
 
 void Excersize_2_1(int solution, int answer)
 {
+	srand(time(NULL));
 
-	double north_distance1 = 130.0;
-	double south_distance = 76.7;
-	double north_distance2 = 80.5;
+	double north_distance1 = 130.0 + rand() % (13 + 1) - 6;
+	double south_distance = 76.7 + rand() % (7 + 1) - 4;
+	double north_distance2 = 80.5 + rand() % (8 + 1) - 4;
 	double y_displacement = 0.0;
 	double displacement_a = 0.0;
 	double displacement_b = 0.0;
@@ -66,7 +67,7 @@ void Excersize_2_1(int solution, int answer)
 
 void Excersize_2_21(int solution, int answer)
 {
-	double h = 380;
+	double h = 380 + rand() % (38 + 1) - 19;
 	double h0 = 0;
 	double g = 9.8;
 	double t = 0;
