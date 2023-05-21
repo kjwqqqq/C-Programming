@@ -12,8 +12,12 @@ void Excersize_2_1(int solution, int answer)
 	double north_distance1 = 130.0;
 	double south_distance = 76.7;
 	double north_distance2 = 80.5;
-	double x_displacement = 0.0;
-	double displacement = 0.0;
+	double y_displacement = 0.0;
+	double displacement_a = 0.0;
+	double displacement_b = 0.0;
+	y_displacement = north_distance1 + north_distance2;
+	displacement_a = y_displacement - south_distance;
+	displacement_b = y_displacement + south_distance;
 
 	printf("\n\n");
 	printf("2-1 \n");
@@ -24,46 +28,36 @@ void Excersize_2_1(int solution, int answer)
 
 	if (solution == SHOW)
 	{
-		printf("\n\n\n");
-		printf("========================= 풀 이 =============================\n");
-		printf("관련 공식은 북쪽으로 이동한 값은 더하고 남쪽으로 이동한 값은 빼는 것입니다. \n");
-
-		x_displacement = north_distance1 + north_distance2;
-		printf("대형기동헬기가 북쪽으로 이동한거리는 %4.1lf km는 다음과 같습니다. \n", x_displacement);
-
-		printf("대형기동헬기가 남쪽으로 이동한거리는 %4.1lf km는 다음과 같습니다. \n\n", south_distance);
+		printf("============================= 풀 이 =============================\n\n");
+		printf("(a) 처음 기지로부터 마지막 도착 지점까지의 헬기의 변위는 얼마인가 ?\n\n");
+		printf("관련 공식은 Δy = Δy1 - Δy2 \n");
+		printf("Δy1은 총 북쪽으로 날아간 거리, Δy2는 총 남쪽으로 날아간 거리\n\n");
+		printf("Δy = Δy1 - Δy2\n");
+		printf("Δy = %6.2lfkm - %6.2lfkm\n", y_displacement, south_distance);
+		printf("    = %6.2lfkm\n\n", displacement_a);
 	}
 
 	if (answer == SHOW)
 	{
-		printf("========================= 정 답 =============================\n");
-		displacement = x_displacement - south_distance;
-		printf("(a) 처음 기지로부터 마지막 도착 지점까지의 헬기의 변위는 얼마인가 ? \n\n");
-		printf("대형기동헬기가 기지로부터 마지막 도착지점은 다음과 같습니다. : %4.1lf km\n", displacement);
-		printf("=================================================================\n");
-		printf("\n\n\n");
+		printf("============================= 정 답 =============================\n\n");
+		printf("처음 기지로부터 마지막 도착 지점까지의 헬기의 변위는 Δy = %4.1lf km\n\n",displacement_a);
 	}
 
-	printf("(b) 또 이날 헬기가 움직인 총 거리는 얼마인가 ? \n\n");
 	if (solution == SHOW)
 	{
-		printf("\n\n\n");
-		printf("=================================================================\n");
-		printf("관련 공식은 총 움직인거리의 총합입니다. \n");
-		x_displacement = north_distance1 + north_distance2;
-		printf("대형기동헬기가 북쪽으로 이동한거리는 %4.1lf km는 다음과 같습니다. \n", x_displacement);
-
-		printf("대형기동헬기가 남쪽으로 이동한거리는 %4.1lf km는 다음과 같습니다. \n\n", south_distance);
+		printf("=================================================================\n\n");
+		printf("(b) 또 이날 헬기가 움직인 총 거리는 얼마인가 ? \n\n");
+		printf("관련 공식은 Δy = Δy1 + Δy2 \n");
+		printf("Δy = Δy1 + Δy2\n");
+		printf("Δy = %6.2lfkm + %6.2lfkm\n", y_displacement, south_distance);
+		printf("    = %6.2lfkm\n\n", displacement_b);
 	}
 
 	if (answer == SHOW)
 	{
-		printf("========================= 정 답 =============================\n");
-		printf("(b) 또 이날 헬기가 움직인 총 거리는 얼마인가 ? \n\n");
-		displacement = x_displacement + south_distance;
-		printf("대형기동헬기가 총 움직인 거리의 합은 다음과 같습니다. : %4.1lf km \n", displacement);
-		printf("=================================================================\n");
-		printf("\n\n\n");
+		printf("========================= 정 답 =================================\n\n");
+		printf("대형기동헬기가 총 움직인 거리는 Δy = %4.1lfkm \n\n",displacement_b );
+		printf("=================================================================\n\n");
 	}
 
 }
@@ -79,6 +73,9 @@ void Excersize_2_21(int solution, int answer)
 	double v0 = 0;
 	double y0 = 0;
 	double initialvelocity = 0;
+	t = sqrt(2 * h / g);
+	t = sqrt(2 * h / g);
+	v = g * t;
 
 	printf("\n\n");
 	printf("2-21 \n");
@@ -88,7 +85,6 @@ void Excersize_2_21(int solution, int answer)
 
 	if (solution == SHOW)
 	{
-		t = sqrt(2 * h / g);
 		printf("=========================   풀 이   =============================\n\n");
 		printf("(a) 이 물체가 지면에 떨어지는 데까지 걸리는 시간을 구하라.\n\n");
 		printf("관련공식 y = y0 + v0 * t + 1/2 * a * t^2\n");
@@ -110,8 +106,6 @@ void Excersize_2_21(int solution, int answer)
 	if (solution == SHOW)
 	{
 		printf("=========================   풀 이   =============================\n\n");
-		t = sqrt(2 * h / g);
-		v = g * t;
 		printf("(b) 지면에 도달하기 직전의 속도를 구하라.\n\n");
 		printf("관련 공식 v = v0 + a * t\n");
 		printf("v : 나중속도, v0 : 처음속도, a : 가속도, t : 시간\n\n");
