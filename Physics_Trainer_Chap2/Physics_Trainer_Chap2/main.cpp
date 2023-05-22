@@ -77,7 +77,7 @@ void Excersize_2_21(int solution, int answer)
 	double initialvelocity = 0;
 	t = sqrt(2 * h / g);
 	t = sqrt(2 * h / g);
-	v = g * t;
+	v = -g * t;
 
 	printf("\n\n");
 	printf("2-21 \n");
@@ -91,11 +91,11 @@ void Excersize_2_21(int solution, int answer)
 		printf("(a) 이 물체가 지면에 떨어지는 데까지 걸리는 시간을 구하라.\n\n");
 		printf("관련공식 y = y0 + v0 * t + 1/2 * a * t^2\n");
 		printf("y : 높이, y0 : 처음높이, v0 : 처음속도, t : 시간, a : 가속도\n\n");
-		printf("중력가속도는 아래 방향이므로 -%6.2lfm/s^2 입니다.\n\n", g);
+		printf("중력가속도는 아래 방향이므로 %6.2lfm/s^2 입니다.\n\n", -g);
 		printf("y = y0 + v0 * t - 1/2 * g * t^2\n");
-		printf("%6.2lfm = %6.2lfm + %6.2lfm/s * t - 1/2 * %6.2lf m/s^2 * t^2\n", h, y0, v0, g);
-		printf("        = - 1/2 * %6.2lfm/s^2 * t^2\n",g);
-		printf("t = sqrt(2 * %6.2lfm / %6.2lfm/s^2)\n",h,g);
+		printf("%6.2lfm = %6.2lfm + %6.2lfm/s * t + 1/2 * %6.2lf m/s^2 * t^2\n", h, y0, v0, -g);
+		printf("        = 1/2 * %6.2lfm/s^2 * t^2\n",-g);
+		printf("t = sqrt(2 * %6.2lfm / %6.2lfm/s^2)\n",h,-g);
 		printf("  = %6.2lfs\n\n", t);
 	}
 
@@ -111,16 +111,16 @@ void Excersize_2_21(int solution, int answer)
 		printf("(b) 지면에 도달하기 직전의 속도를 구하라.\n\n");
 		printf("관련 공식 v = v0 + a * t\n");
 		printf("v : 나중속도, v0 : 처음속도, a : 가속도, t : 시간\n\n");
-		printf("중력가속도는 아래 방향이므로 -%6.2lfm/s^2 입니다.\n\n", g);
+		printf("중력가속도는 아래 방향이므로 %6.2lfm/s^2 입니다.\n\n", -g);
 		printf("v = v0 + a * t\n");
-		printf("  = %6.2lfm - %6.2lf m/s^2 * %6.2lfs\n", v0, g, t);
+		printf("  = %6.2lfm + %6.2lf m/s^2 * %6.2lfs\n", v0, -g, t);
 		printf("  = %6.2lfm/s\n\n", v);
 
 	}
 	if (answer == SHOW)
 	{
 		printf("=========================   정 답   =============================\n\n");
-		printf("v = -%6.2lfm/s\n\n", v);
+		printf("v = %6.2lfm/s\n\n", v);
 		printf("=================================================================\n\n");
 	}
 }
