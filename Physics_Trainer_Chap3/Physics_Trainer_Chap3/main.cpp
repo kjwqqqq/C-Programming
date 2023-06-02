@@ -14,14 +14,15 @@
 
 void Excersize_3_10(int solution, int answer)
 {
-	double angle = 45;
-	double y = 3.7;
+	srand(time(NULL));
+	double angle = 45 + rand() % (4 + 1) - 2;
+	double y = 3.7 + rand() % (3 + 1) - 1;
 	double vy = 0;
 	double v0y = 0;
 	double v0 = 0;
 	double g = 9.8;
 	v0y = sqrt(2 * g * y);
-	v0 = v0y / sin(angle);
+	v0 = v0y / sin(angle * M_PI / 180);
 	printf("\n\n");
 	printf("3-10 \n");
 	printf("동물의 왕국에서 가장 빠른 동물은 표범인데 %6.2lf˚의 각도로\n", angle);
@@ -69,11 +70,11 @@ void Excersize_3_10(int solution, int answer)
 
 void Excersize_3_18(int solution, int answer)
 {
-	double v0 = 60;
+	double v0 = 60 + rand() % (6 + 1) - 3;
 	double y = 0;
 	double y0 = 0;
 	double vy = 0;
-	double angle = 30;
+	double angle = 30 + rand() % (3 + 1) - 1;
 	double v0x = 0;
 	double v0y = 0;
 	double t = 0;
@@ -83,7 +84,7 @@ void Excersize_3_18(int solution, int answer)
 	v0y = v0 * sin(angle * M_PI / 180);
 	t = v0y / g;
 	y = (v0y * t) - (0.5 * g * t * t);
-	Δx = v0x / t;
+	Δx = v0x * t;
 	printf("\n\n");
 	printf("2-21 \n");
 	printf("초속도 %6.2lfm/s로 수평면에 대해 %6.2lf˚의 각으로 공을 던졌다.\n",v0,angle);
@@ -98,7 +99,7 @@ void Excersize_3_18(int solution, int answer)
 		printf("(a) 이 물체가 올라갈 수 있는 최고 높이의 시간을 구하라.\n\n");
 		printf("관련공식 t = (vy - v0y) / a\n");
 		printf("vy : 나중높이속력, v0y : 처음높이속력, t : 시간, a : 가속도\n\n");
-		printf("중력가속도는 아래 방향이므로 -%6.2lfm/s^2 입니다.\n\n", g);
+		printf("중력가속도는 아래 방향이므로 %6.2lfm/s^2 입니다.\n\n", -g);
 		printf("t = (vy - v0y) / -g\n");
 		printf("  = (%6.2lfm/s - %6.2lfm/s) / %6.2lfm/s^2\n",vy,v0y,-g);
 		printf("  = %6.2lfs\n\n",t);
