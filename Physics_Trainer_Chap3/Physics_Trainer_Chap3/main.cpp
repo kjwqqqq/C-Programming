@@ -37,8 +37,9 @@ void Excersize_3_10(int solution, int answer)
 		printf("(a) 표범이 뛰어오를 수 있는 처음속도는 얼마인가?\n\n");
 		printf("관련 공식은 vy^2 - v0y^2 = 2 * a * Δy\n");
 		printf("vy는 나중높이속도, v0y는 처음높이속도, a는 가속도, Δy는 높이변화량\n\n");
-		printf("  vy^2    - v0y^2 = -2 * g * Δy\n");
-		printf("%6.2lfm/s - v0y^2 = -2 * %6.2lfm/s^2 * %6.2lfm\n\n", vy, g, y);
+		printf("중력가속도는 아래 방향이므로 %6.2lfm/s^2 입니다.\n\n", -g);
+		printf("      vy^2    - v0y^2 = 2 * -g * Δy\n");
+		printf("(%6.2lfm/s)^2 - v0y^2 = 2 * %6.2lfm/s^2 * %6.2lfm\n\n", vy, -g, y);
 		printf("v0y = sqrt(2 * %6.2lfm/s^2 * %6.2lfm)\n", g, y);
 		printf("    = %6.2lfm/s\n\n", v0y);
 	}
@@ -86,7 +87,7 @@ void Excersize_3_18(int solution, int answer)
 	y = (v0y * t) - (0.5 * g * t * t);
 	Δx = v0x * t;
 	printf("\n\n");
-	printf("2-21 \n");
+	printf("3-18\n");
 	printf("초속도 %6.2lfm/s로 수평면에 대해 %6.2lf˚의 각으로 공을 던졌다.\n",v0,angle);
 	printf("이 물체가 올라갈 수 있는 (a) 최고 높이와 (b) 수평도달거리를 구하라.\n\n");
 	printf("(a) 이 물체가 올라갈 수 있는 최고 높이의 시간을 구하라.\n");
